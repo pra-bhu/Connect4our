@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f9eeecf4d61326f66ae8ffedd0af0557",
+    "revision": "4ccfe77a3a8f2bfd9724e4aa27712890",
     "url": "/pra-bhu/connect4our.git/index.html"
   },
   {
