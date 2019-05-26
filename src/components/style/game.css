@@ -1,0 +1,288 @@
+:root{
+    --player1Color : #ff3b3b;
+    --player2Color : #3b69ff;
+    --parentBgColor : none;
+    
+}
+
+.GameOver{
+    background: #000000;
+    color: #EAEAEA;
+}
+
+.Parent{
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    background-color: var(--parentBgColor);
+}
+
+.Header{
+    display: flex;
+    justify-content: space-around;
+    align-self: stretch;
+}
+
+.Heading{
+    padding: 10px 0 0 0;
+    
+    margin: 0%;
+    align-self: flex-end;
+}
+
+.Help{
+    width : 40px;
+    height : 40px;
+    align-self: flex-end;
+}
+
+.MainSection{
+    
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 30px 30px 30px 30px;
+    -webkit-border-radius: 30px 30px 30px 30px;
+    border: 2px solid #000000;
+    -webkit-box-shadow: 10px 10px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 3px 0px rgba(0,0,0,0.75);
+}
+
+.GameBoard{
+    display:  grid;
+    grid-template: repeat(6,1fr) /repeat(7,1fr) ;
+    max-width: 400px;
+    width : 100%;
+    grid-gap: 10px;
+}
+
+.emptyDisc{
+    height : 40px;
+    width : 40px;
+    border-radius: 50%;
+    background-color: grey; 
+    grid-column-start: auto;
+    grid-row-start: auto;
+    -webkit-box-shadow: inset 4px 4px 0px 1px rgba(102,102,102,1);
+    box-shadow: inset 4px 4px 0px 1px rgba(102,102,102,1);
+}
+
+.Player1Disc{
+    height : 40px;
+    width : 40px;
+    border-radius: 50%;
+    background-color: var(--player1Color); 
+    grid-column-start: auto;
+    grid-row-start: auto;
+    -webkit-box-shadow:  2px 2px 0px 1px rgba(255, 59, 59, 0.733);
+    box-shadow:  2px 2px 0px 1px rgba(255, 59, 59,0.733);
+    background: #EAEAEA;
+    background: -webkit-linear-gradient(-45deg, #EAEAEA 0%, #FF3B3B 56%, #FF3B3B 100%);
+    background: linear-gradient(135deg, #EAEAEA 0%, #FF3B3B 56%, #FF3B3B 100%);
+}
+
+.Player2Disc{
+    height : 40px;
+    width : 40px;
+    border-radius: 50%;
+    background-color: var(--player2Color); 
+    grid-column-start: auto;
+    grid-row-start: auto;
+    -webkit-box-shadow:  2px 2px 0px 1px rgba(59, 105, 255, 0.733);
+    box-shadow:  2px 2px 0px 1px rgba(59, 105, 255,0.733);
+    background: #EAEAEA;
+    background: -webkit-linear-gradient(-45deg, #EAEAEA 0%, #3B69FF 56%, #3b69ff 100%);
+    background: linear-gradient(135deg, #EAEAEA 0%, #3B69FF 56%, #3b69ff 100%);
+}
+
+.GameStatus{
+    display: flex;
+    align-items: center;
+}
+
+.FlipCoin{
+    height : 60px;
+    width : 60px;
+    border-radius: 50%;
+    background-color: var(--player1Color);
+    margin : 10px;
+}                                                                       
+
+.ColorPlayer1{
+    background: var(--player1Color);
+    -webkit-box-shadow:  0px 4px 0px 1px rgba(255, 59, 59, 0.733);
+    box-shadow: 0px 4px 0px 1px rgba(255, 59, 59, 0.733);
+    background: #FF8D8D;
+    background: -webkit-linear-gradient(left, #FF8D8D 0%, #FF3B3B 50%, #FF8D8D 100%);
+    background: linear-gradient(to right, #FF8D8D 0%, #FF3B3B 50%, #FF8D8D 100%);
+    
+}
+
+.ColorPlayer2{
+    background-color:  var(--player2Color);
+    -webkit-box-shadow:  0px 4px 0px 1px rgba(59, 105, 255, 0.733);
+    box-shadow:  0px 4px 0px 1px rgba(59, 105, 255,0.733);
+    background: #7DB1FF;
+    background: -webkit-linear-gradient(left, #7DB1FF 0%, #3B69FF 50%, #7DB1FF 100%);
+    background: linear-gradient(to right, #7DB1FF 0%, #3B69FF 50%, #7DB1FF 100%);
+}
+
+/* Flip Animation */
+
+@-webkit-keyframes flip-left {
+    0% {
+        -webkit-transform: rotateY(0);
+                transform: rotateY(0);
+    }
+    100% {
+        -webkit-transform: rotateY(-180deg);
+                transform: rotateY(-180deg);
+    }
+    }
+    
+@keyframes flip-left {
+    0% {
+        -webkit-transform: rotateY(0);
+                transform: rotateY(0);
+    }
+    100% {
+        -webkit-transform: rotateY(-180deg);
+                transform: rotateY(-180deg);
+    }
+    }
+    
+
+.flip-left {
+	-webkit-animation: flip-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: flip-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes flip-right {
+    0% {
+        -webkit-transform: rotateY(0);
+                transform: rotateY(0);
+    }
+    100% {
+        -webkit-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+    }
+    }
+    
+@keyframes flip-right {
+    0% {
+        -webkit-transform: rotateY(0);
+                transform: rotateY(0);
+    }
+    100% {
+        -webkit-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+    }
+    }
+
+
+.flip-right {
+	-webkit-animation: flip-right 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: flip-right 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+.Status{
+    margin : 10px;
+}
+
+.Reset{
+    background-color: rgb(29, 29, 29);
+    margin: 15px;
+    color: whitesmoke;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    -webkit-box-shadow: 4px 4px 0px 1px rgba(102,102,102,1);
+    box-shadow: 4px 4px 0px 1px rgba(102,102,102,1);
+    background: #8D8D8D;
+    background: -webkit-linear-gradient(-45deg, #8D8D8D 0%, #000000 56%, #000000 100%);
+    background: linear-gradient(135deg, #8D8D8D 0%, #000000 56%, #000000 100%);
+}
+
+/* Responsive design */
+
+@media screen and (max-width: 430px) {
+
+    .Reset 
+    {height: 3rem ;
+        width : 3rem;
+        margin: 0.4rem;
+        font-size: 0.7rem;
+        -webkit-box-shadow: 2px 2px 0px 0.5px rgba(102,102,102,1);
+    box-shadow: 2px 2px 0px 0.5px rgba(102,102,102,1);
+    }
+
+    .FlipCoin{
+        height : 40px;
+        width : 40px;
+        margin : 10px 0px 10px 0px;
+    }     
+
+    .emptyDisc{
+        height : 30px;
+        width : 30px;
+        -webkit-box-shadow: inset 2px 2px 0px 0.4px rgba(102,102,102,1);
+        box-shadow: inset 2px 2px 0px 0.4px rgba(102,102,102,1);
+    }
+    
+    .Player1Disc{
+        height : 30px;
+        width : 30px;
+        -webkit-box-shadow:  1px 1px 0px 0.4px rgba(255, 59, 59, 0.733);
+        box-shadow:  1px 1px 0px 0.4px rgba(255, 59, 59,0.733);
+        background: #EAEAEA;
+        background: -webkit-linear-gradient(-45deg, #EAEAEA 0%, #FF3B3B 56%, #FF3B3B 100%);
+        background: linear-gradient(135deg, #EAEAEA 0%, #FF3B3B 56%, #FF3B3B 100%);
+    }
+    
+    .Player2Disc{
+        height : 30px;
+        width : 30px;
+        -webkit-box-shadow:  1px 1px 0px 0.4px rgba(59, 105, 255, 0.733);
+        box-shadow:  1px 1px 0px 0.4px rgba(59, 105, 255,0.733);
+    }
+
+.Help{
+    width : 30px;
+    height : 30px;
+}
+
+.MainSection{
+    padding: 10px;
+    border: 2px solid #000000;
+    -webkit-box-shadow: 7px 7px 1.5px 0px rgba(0,0,0,0.75);
+    box-shadow: 7px 7px 1.5px 0px rgba(0,0,0,0.75);
+}
+
+.GameBoard{
+    max-width: 280px;
+    grid-gap: 5px;
+}
+
+
+.Header{
+    justify-content: center;
+    /* align-self: stretch; */
+}
+
+
+.ColorPlayer1{
+    -webkit-box-shadow:  0px 3px 0px 1px rgba(255, 59, 59, 0.733);
+    box-shadow: 0px 3px 0px 1px rgba(255, 59, 59, 0.733);
+    
+}
+
+.ColorPlayer2{
+    -webkit-box-shadow:  0px 3px 0px 1px rgba(59, 105, 255, 0.733);
+    box-shadow:  0px 3px 0px 1px rgba(59, 105, 255,0.733);
+}
+
+
+}
