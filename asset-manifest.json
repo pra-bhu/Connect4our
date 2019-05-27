@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pra-bhu/connect4our.git/static/css/main.05652be2.chunk.css",
-    "main.js": "/pra-bhu/connect4our.git/static/js/main.defc8b01.chunk.js",
-    "main.js.map": "/pra-bhu/connect4our.git/static/js/main.defc8b01.chunk.js.map",
-    "runtime~main.js": "/pra-bhu/connect4our.git/static/js/runtime~main.6bb1aa93.js",
-    "runtime~main.js.map": "/pra-bhu/connect4our.git/static/js/runtime~main.6bb1aa93.js.map",
-    "static/js/2.1ffb9391.chunk.js": "/pra-bhu/connect4our.git/static/js/2.1ffb9391.chunk.js",
-    "static/js/2.1ffb9391.chunk.js.map": "/pra-bhu/connect4our.git/static/js/2.1ffb9391.chunk.js.map",
-    "index.html": "/pra-bhu/connect4our.git/index.html",
-    "precache-manifest.a668df2b9cb2c797ef05b3581756cf35.js": "/pra-bhu/connect4our.git/precache-manifest.a668df2b9cb2c797ef05b3581756cf35.js",
-    "service-worker.js": "/pra-bhu/connect4our.git/service-worker.js",
-    "static/css/main.05652be2.chunk.css.map": "/pra-bhu/connect4our.git/static/css/main.05652be2.chunk.css.map"
+    "main.css": "/connect4our/static/css/main.05652be2.chunk.css",
+    "main.js": "/connect4our/static/js/main.7fd01116.chunk.js",
+    "main.js.map": "/connect4our/static/js/main.7fd01116.chunk.js.map",
+    "runtime~main.js": "/connect4our/static/js/runtime~main.f4bd86db.js",
+    "runtime~main.js.map": "/connect4our/static/js/runtime~main.f4bd86db.js.map",
+    "static/js/2.1ffb9391.chunk.js": "/connect4our/static/js/2.1ffb9391.chunk.js",
+    "static/js/2.1ffb9391.chunk.js.map": "/connect4our/static/js/2.1ffb9391.chunk.js.map",
+    "index.html": "/connect4our/index.html",
+    "precache-manifest.0c2b38e200eac459e3d43296f5acf168.js": "/connect4our/precache-manifest.0c2b38e200eac459e3d43296f5acf168.js",
+    "service-worker.js": "/connect4our/service-worker.js",
+    "static/css/main.05652be2.chunk.css.map": "/connect4our/static/css/main.05652be2.chunk.css.map"
   }
 }
