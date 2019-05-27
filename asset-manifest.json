@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/connect4our/static/css/main.3e78f356.chunk.css",
-    "main.js": "/connect4our/static/js/main.afd8b896.chunk.js",
-    "main.js.map": "/connect4our/static/js/main.afd8b896.chunk.js.map",
+    "main.js": "/connect4our/static/js/main.dfdbbfd2.chunk.js",
+    "main.js.map": "/connect4our/static/js/main.dfdbbfd2.chunk.js.map",
     "runtime~main.js": "/connect4our/static/js/runtime~main.f4bd86db.js",
     "runtime~main.js.map": "/connect4our/static/js/runtime~main.f4bd86db.js.map",
     "static/js/2.1ffb9391.chunk.js": "/connect4our/static/js/2.1ffb9391.chunk.js",
     "static/js/2.1ffb9391.chunk.js.map": "/connect4our/static/js/2.1ffb9391.chunk.js.map",
     "index.html": "/connect4our/index.html",
-    "precache-manifest.90cddacf5774671bc214cb2a02fe6ebd.js": "/connect4our/precache-manifest.90cddacf5774671bc214cb2a02fe6ebd.js",
+    "precache-manifest.ca1eb2e95b112c3ca720d50c1ef16c65.js": "/connect4our/precache-manifest.ca1eb2e95b112c3ca720d50c1ef16c65.js",
     "service-worker.js": "/connect4our/service-worker.js",
     "static/css/main.3e78f356.chunk.css.map": "/connect4our/static/css/main.3e78f356.chunk.css.map"
   }
