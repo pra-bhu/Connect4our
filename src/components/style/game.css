@@ -211,8 +211,9 @@
 @media screen and (max-width: 430px) {
 
     .Reset 
-    {height: 3rem ;
-        width : 3rem;
+    {
+        height:  20vw;
+        width : 20vw;
         margin: 0.4rem;
         font-size: 0.7rem;
         -webkit-box-shadow: 2px 2px 0px 0.5px rgba(102,102,102,1);
@@ -220,21 +221,21 @@
     }
 
     .FlipCoin{
-        height : 40px;
-        width : 40px;
+        height : 20vw;
+        width : 20vw;
         margin : 10px 0px 10px 0px;
     }     
 
     .emptyDisc{
-        height : 30px;
-        width : 30px;
+        height : 11vw;
+        width : 11vw;
         -webkit-box-shadow: inset 2px 2px 0px 0.4px rgba(102,102,102,1);
         box-shadow: inset 2px 2px 0px 0.4px rgba(102,102,102,1);
     }
     
     .Player1Disc{
-        height : 30px;
-        width : 30px;
+        height : 11vw;
+        width : 11vw;
         -webkit-box-shadow:  1px 1px 0px 0.4px rgba(255, 59, 59, 0.733);
         box-shadow:  1px 1px 0px 0.4px rgba(255, 59, 59,0.733);
         background: #EAEAEA;
@@ -243,32 +244,38 @@
     }
     
     .Player2Disc{
-        height : 30px;
-        width : 30px;
+        height : 11vw;
+        width : 11vw;
         -webkit-box-shadow:  1px 1px 0px 0.4px rgba(59, 105, 255, 0.733);
         box-shadow:  1px 1px 0px 0.4px rgba(59, 105, 255,0.733);
     }
 
 .Help{
-    width : 30px;
-    height : 30px;
+    width : 9vw;
+    height : 9vw;
 }
 
 .MainSection{
-    padding: 10px;
+    width : 90%;
+    margin: 3vh 3vw 3vh 3vw;
+    padding: 3vw;
     border: 2px solid #000000;
     -webkit-box-shadow: 7px 7px 1.5px 0px rgba(0,0,0,0.75);
     box-shadow: 7px 7px 1.5px 0px rgba(0,0,0,0.75);
 }
 
 .GameBoard{
-    max-width: 280px;
+    max-width: 320px;
     grid-gap: 5px;
+    margin : 5vh 5vw 5vh 5vw;
 }
 
-
+.Heading{
+    align-items: center;
+}
 .Header{
     justify-content: center;
+    font-size: 3vh;
     /* align-self: stretch; */
 }
 

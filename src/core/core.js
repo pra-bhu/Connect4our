@@ -186,6 +186,7 @@ function checkDiagonal45deg(currCol, currRow, gridState, currClass){
     
                 }
             }        
+            console.log(winDeque)
         return winDeque;
 }
 
@@ -236,7 +237,7 @@ function checkDiagonal135deg(currCol, currRow, gridState, currClass){
         
                     
                     if(currRow + 3 <= 5 
-                        && currCol+3 >= 6 
+                        && currCol+3 <= 6 
                         && getClassName([currRow +3, currCol +3],gridState) === currClass 
                         && winDeque.length < 4){
         
@@ -246,5 +247,6 @@ function checkDiagonal135deg(currCol, currRow, gridState, currClass){
     
                 }
             }        
+            console.log(winDeque)
         return winDeque;
 }

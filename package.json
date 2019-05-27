@@ -2,7 +2,14 @@
   "name": "connect4our",
   "version": "0.1.0",
   "private": true,
+  "description": "Connect 4 discs of same color consecutively to win the Game",
+  "author": {
+    "name": "Prashant Bhushan",
+    "email": "prashant.bhushan@outlook.com"
+  },
+  "homepage": "https://pra-bhu.github.io/connect4our/",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "immutable": "^4.0.0-rc.12",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -12,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
