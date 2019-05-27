@@ -186,7 +186,7 @@ function checkDiagonal45deg(currCol, currRow, gridState, currClass){
     
                 }
             }        
-            console.log(winDeque)
+    
         return winDeque;
 }
 
@@ -247,6 +247,6 @@ function checkDiagonal135deg(currCol, currRow, gridState, currClass){
     
                 }
             }        
-            console.log(winDeque)
+            
         return winDeque;
 }
